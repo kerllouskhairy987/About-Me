@@ -1,0 +1,333 @@
+:root {
+    --Primary: #FED049;
+    --Secondary: #007580;
+    --Red: #E01B24;
+    --Grey: #FAFAFA;
+    --Black: #000000;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(270deg, rgba(99, 99, 99, 0), rgba(202, 202, 202, 0.151), rgba(116, 116, 116, 0.096));
+    overflow-x: hidden;
+
+}
+
+/* Start Header */
+header {
+    background-color: #fafafa94;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+header span.name {
+    display: block;
+    padding: 10px 30px;
+    font-size: 28px;
+    letter-spacing: 3px;
+
+}
+
+header span .sp-name {
+    word-spacing: 6px;
+}
+
+header span .fa-k {
+    color: var(--Secondary);
+}
+
+header .fa-bars-staggered {
+    display: block;
+    padding: 0px 30px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* End Header */
+/* Start profile-Info */
+.profile-info {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* margin: auto; */
+}
+
+.profile .infotext {
+    width: 60%;
+}
+
+.profile .infoimg {
+    height: 400px;
+    margin-top: -80px;
+}
+
+.profile .infoimg img {
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+h3,
+.profile-info .skills h3,
+.profile-info .percentage h3,
+.profile-info .hobbies h3,
+.profile-info .contact-me h3 {
+    padding: 8px 0px 17px 0px;
+    color: var(--Secondary);
+    padding-top: 80px;
+}
+
+.profile-info .profile p {
+    line-height: 29px;
+}
+
+.profile-info .info {
+    width: 100%;
+    padding-top: 30px;
+    border: 1px solid#ddd;
+    border-bottom: none;
+    text-align: center;
+}
+
+.offcanvas .offcanvas-body .info a {
+    text-decoration: none;
+    color: var(--Secondary);
+}
+
+.offcanvas .offcanvas-body .info h5 {
+    padding: 0px 0px 10px 0px;
+}
+
+/* End profile-Info */
+/* Start Skills */
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.images .desc img {
+    border-radius: 0px 0px 7px 7px;
+}
+
+.images .desc p {
+    padding: 20px 0px 0px 0px;
+}
+
+/* End Skills */
+/* Start parecantage */
+.all_progress {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.all_progress .annimated-progress {
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.all_progress .annimated-progress span {
+    display: block;
+    width: 98%;
+    height: 100%;
+    background-color: #007580;
+}
+
+.all_progress .annimated-progress .sp2{
+    width: 98%;
+}
+
+.all_progress .annimated-progress .sp3{
+    width: 91%;
+}
+
+.all_progress .annimated-progress .sp4{
+    width: 90%;
+}
+
+.all_progress .annimated-progress .sp5{
+    width: 86%;
+}
+
+.all_progress .annimated-progress .sp6{
+    width: 79%;
+}
+/* End parecantage */
+/* Start Hobbies */
+.hobbies .desc-hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hobbies .desc-hobbies img {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.hobbies .desc-hobbies p {
+    padding: 14px 0px 8px 0px;
+}
+
+/* End Hobbies */
+/* Start Cotact me */
+.contact-me {
+    max-width: 600px;
+    margin: 80px auto 0px;
+    background-image: url(../images/call.avif);
+    background-position: center;
+    background-size: cover;
+    border-radius: 90px 0px 90px 0px;
+    overflow: hidden;
+}
+
+
+.contact-me .contact-me-info {
+    padding: 0px 30px;
+    color: #ffffff;
+    padding-bottom: 35px;
+}
+
+.contact-me label {
+    display: block;
+    padding: 10px 5px;
+}
+
+.contact-me input {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 7px 13px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    background-color: var(--Grey);
+}
+
+.contact-me textarea {
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 7px 13px;
+    background-color: var(--Grey);
+}
+
+.contact-me-info textarea{
+    width: 100%;
+    max-height: 190px;
+    resize: none;
+}
+
+.contact-me-info textarea::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* End Contact me */
+/* Start Footer */
+footer ul.nav li a .icon {
+    font-size: 30px;
+}
+
+/* End Footer */
+/* Start Right Icon */
+/* Start Right Icon */
+.all-RightIcon {
+    margin-top: 62px;
+    height: 100vh;
+    width: 50px;
+    background-color: #f3f3f3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: inset -4px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.RightIcon {
+    width: 50px;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.RightIcon span {
+    font-size: 37px;
+}
+
+.RightIcon span .icon {
+    cursor: pointer;
+}
+
+/* End View Tablet */
+@media(max-width : 834px) {
+
+    /* Start profile-Info */
+    .profile-info .info {
+
+        margin-bottom: 20px;
+    }
+
+    .profile-info .info a {
+        line-height: 29px;
+    }
+
+    /* End profile-Info */
+    /* Start Profile */
+    .profile {
+        flex-wrap: wrap-reverse;
+    }
+
+    .profile .infoimg {
+        width: 100%;
+        order: 2;
+        margin: -30px 0px 20px 0px;
+    }
+
+    .profile .infotext {
+        width: 100%;
+        order: 1;
+    }
+
+    .profile-info h3 {
+        text-align: center;
+    }
+
+    /* End Profile */
+}
+
+
+/* End View Tablet */
+
+/* Start Mobile View */
+@media(max-width : 567px) {
+
+    /* Start Header */
+    header span {
+        letter-spacing: 0px;
+    }
+
+    header span .sp-name {
+        word-spacing: 2px;
+    }
+
+    /* End Header */
+
+}
+
+/* End Mobile View */
